@@ -26,7 +26,7 @@
    <img src="jQueryAssets/images/wall.0008.0526.jpg" width="320" height="180" alt=""/> 
 	<img src="jQueryAssets/images/ジャンプ.0005.0057.jpg" width="320" height="180" alt=""/>
 	<img src="jQueryAssets/images/pitching.0001.0039.jpg" width="320" height="180" alt=""/>
-	</div>
+  </div>
   <div id="tabs-2">
    <img src="jQueryAssets/images/tsubame persp.png" width="310" height="438" alt=""/> 
 	<img src="jQueryAssets/images/山小屋プロト.png" width="320" height="440" alt=""/></div>
@@ -35,26 +35,32 @@
 	<img src="jQueryAssets/images/tennis_book_hachi.jpg" width="300" height="200" alt=""/></div>
 </div>
 <p>一覧</p>
-<div id="Accordion1">
-  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-accordion-Accordion1-header-0" aria-controls="ui-accordion-Accordion1-panel-0" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><a href="#">セクション１</a></h3>
-  <div>
-        <img src="jQueryAssets/images/wall.0008.0526.jpg" width="320" height="180" alt=""/> </div>
-	  <h3><a href="#">セクション 2</a></h3>
-	  
-	  <div>
-	    <p>コンテンツ 2</p>
+<div id="Tabs2">
+  <ul>
+    <li><a href="#tabs-4">Tab 1</a></li>
+    <li><a href="#tabs-5">Tab 2</a></li>
+    <li><a href="#tabs-6">Tab 3</a></li>
+  </ul>
+  <div id="tabs-4">
+    <p>コンテンツ 1</p>
   </div>
-	  <h3><a href="#">セクション 3</a></h3>
-	  <div>
-	    <p>コンテンツ 3</p>
+  <div id="tabs-5">
+    <p>コンテンツ 2</p>
+  </div>
+  <div id="tabs-6">
+    <p>コンテンツ 3</p>
   </div>
 </div>
+<div id="Accordion1"> </div>
 <script type="text/javascript">
 $(function() {
 	$( "#Tabs1" ).tabs(); 
 });
 $(function() {
 	$( "#Accordion1" ).accordion(); 
+});
+$(function() {
+	$( "#Tabs2" ).tabs(); 
 });
 </script>
 </body>
